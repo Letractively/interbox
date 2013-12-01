@@ -1,0 +1,52 @@
+<!-- Documentation produced by the Html generator of Bouml (http://bouml.free.fr) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class SQLSelect</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class SQLSelect</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="refclass150402"></a>
+<p>a SELECT statement<br />@version 0.7.20110313<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.common.database<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>Php :  class SQLSelect implements <a href="class149378.html#refclass149378"><b>FieldExpListInterface</b></a>, <a href="class148866.html#refclass148866"><b>ConditionInterface</b></a> </li></ul><p>Artifact : <a href="index.html#refartifact149890"><b>SQLSelect.class</b></a></p>
+<div class="sub">
+<a name="refattribute165250"></a>
+<table><tr><td><div class="element">Attribute <b>table</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # table :  =  ""</li><li>Php : protected $table</li></ul><a name="refattribute165378"></a>
+<table><tr><td><div class="element">Attribute <b>fieldlist</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # fieldlist : </li><li>Php : protected $fieldlist</li></ul><a name="refattribute165506"></a>
+<table><tr><td><div class="element">Attribute <b>condition</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # condition : </li><li>Php : protected $condition</li></ul><a name="refattribute165634"></a>
+<table><tr><td><div class="element">Attribute <b>orderby</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # orderby :  =  ""</li><li>Php : protected $orderby</li></ul><a name="refattribute165762"></a>
+<table><tr><td><div class="element">Attribute <b>groupby</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # groupby :  =  ""</li><li>Php : protected $groupby</li></ul><a name="refattribute165890"></a>
+<table><tr><td><div class="element">Attribute <b>having</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # having :  =  ""</li><li>Php : protected $having</li></ul><a name="refoperation254338"></a>
+<table><tr><td><div class="element">Operation <b>__construct</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : ~ __construct(inout t :  = "") : </li><li>Php :  function __construct($t = "") </li></ul><a name="refoperation254466"></a>
+<table><tr><td><div class="element">Operation <b>SetTable</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetTable(inout t : ) : </li><li>Php : public function SetTable($t) </li></ul><a name="refoperation254594"></a>
+<table><tr><td><div class="element">Operation <b>JoinTable</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + JoinTable(inout t : , inout on : ) : </li><li>Php : public function JoinTable($t, $on) </li></ul><a name="refoperation254722"></a>
+<table><tr><td><div class="element">Operation <b>AddField</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + AddField(inout exp : , inout alias :  = "") : </li><li>Php : public function AddField($exp, $alias = "") </li></ul><a name="refoperation254850"></a>
+<table><tr><td><div class="element">Operation <b>ClearFields</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ClearFields() : </li><li>Php : public function ClearFields() </li></ul><a name="refoperation254978"></a>
+<table><tr><td><div class="element">Operation <b>FieldCount</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + FieldCount() : </li><li>Php : public function FieldCount() </li></ul><a name="refoperation255106"></a>
+<table><tr><td><div class="element">Operation <b>AddCondition</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + AddCondition(inout c : , inout l :  = IBC1_LOGICAL_AND) : </li><li>Php : public function AddCondition($c, $l = IBC1_LOGICAL_AND) </li></ul><a name="refoperation255234"></a>
+<table><tr><td><div class="element">Operation <b>ClearConditions</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ClearConditions() : </li><li>Php : public function ClearConditions() </li></ul><a name="refoperation255362"></a>
+<table><tr><td><div class="element">Operation <b>ConditionCount</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ConditionCount() : </li><li>Php : public function ConditionCount() </li></ul><a name="refoperation255490"></a>
+<table><tr><td><div class="element">Operation <b>OrderBy</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + OrderBy(inout field : , inout mode :  = IBC1_ORDER_ASC) : </li><li>Php : public function OrderBy($field, $mode = IBC1_ORDER_ASC) </li></ul><a name="refoperation255618"></a>
+<table><tr><td><div class="element">Operation <b>GroupBy</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + GroupBy(inout field : , inout having :  = "") : </li><li>Php : public function GroupBy($field, $having = "") </li></ul><a name="refoperation255746"></a>
+<table><tr><td><div class="element">Operation <b>GetSQL</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + GetSQL() : </li><li>Php : public function GetSQL() </li></ul><a name="refoperation255874"></a>
+<table><tr><td><div class="element">Operation <b>SetRowNumber</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetRowNumber(inout i : ) : </li><li>Php : public function SetRowNumber($i) </li></ul><a name="refoperation256002"></a>
+<table><tr><td><div class="element">Operation <b>GetRowCount</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + GetRowCount() : </li><li>Php : public function GetRowCount() </li></ul></div>
+<p>All public operations : <a href="class148866.html#refoperation245122"><b>AddCondition</b></a> , <a href="class150402.html#refoperation255106"><b>AddCondition</b></a> , <a href="class149378.html#refoperation250882"><b>AddField</b></a> , <a href="class150402.html#refoperation254722"><b>AddField</b></a> , <a href="class148866.html#refoperation245250"><b>ClearConditions</b></a> , <a href="class150402.html#refoperation255234"><b>ClearConditions</b></a> , <a href="class149378.html#refoperation251010"><b>ClearFields</b></a> , <a href="class150402.html#refoperation254850"><b>ClearFields</b></a> , <a href="class148866.html#refoperation245378"><b>ConditionCount</b></a> , <a href="class150402.html#refoperation255362"><b>ConditionCount</b></a> , <a href="class149378.html#refoperation251138"><b>FieldCount</b></a> , <a href="class150402.html#refoperation254978"><b>FieldCount</b></a> , <a href="class150402.html#refoperation256002"><b>GetRowCount</b></a> , <a href="class150402.html#refoperation255746"><b>GetSQL</b></a> , <a href="class150402.html#refoperation255618"><b>GroupBy</b></a> , <a href="class150402.html#refoperation254594"><b>JoinTable</b></a> , <a href="class150402.html#refoperation255490"><b>OrderBy</b></a> , <a href="class150402.html#refoperation255874"><b>SetRowNumber</b></a> , <a href="class150402.html#refoperation254466"><b>SetTable</b></a> </p>
+</body>
+</html>

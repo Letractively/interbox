@@ -1,0 +1,50 @@
+<!-- Documentation produced by the Html generator of Bouml (http://bouml.free.fr) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class DBSQLSTMT</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class DBSQLSTMT</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="refclass149122"></a>
+<p>an abstract sql statement<br />@version 0.3.20110313<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.common.database<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>Php :  abstract class DBSQLSTMT </li></ul><p>Directly inherited by : <a href="class151042.html#refclass151042"><b>MySQLiSTMT</b></a> </p>
+<p>Artifact : <a href="index.html#refartifact148610"><b>DBSQLSTMT.class</b></a></p>
+<div class="sub">
+<a name="refattribute163586"></a>
+<table><tr><td><div class="element">Attribute <b>errorlist</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # errorlist : </li><li>Php : protected $errorlist</li></ul><a name="refattribute163714"></a>
+<table><tr><td><div class="element">Attribute <b>connObj</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # connObj :  =  NULL</li><li>Php : protected $connObj</li></ul><a name="refattribute163842"></a>
+<table><tr><td><div class="element">Attribute <b>stmtObj</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # stmtObj :  =  NULL</li><li>Php : protected $stmtObj</li></ul><a name="refattribute163970"></a>
+<table><tr><td><div class="element">Attribute <b>sql</b></div></td></tr></table>
+<p>sql string containing '?' where puts a parameter.<br />@var string<br /><br /></p><p>Declaration :</p><ul><li>Uml : + sql : string</li><li>Php : public $sql</li></ul><a name="refattribute164098"></a>
+<table><tr><td><div class="element">Attribute <b>resultArr</b></div></td></tr></table>
+<p>an array of bound result variables<br />@var array<br /><br /></p><p>Declaration :</p><ul><li>Uml : # resultArr : array =  array()</li><li>Php : protected $resultArr</li></ul><a name="refattribute164226"></a>
+<table><tr><td><div class="element">Attribute <b>paramArr</b></div></td></tr></table>
+<p>an array of parameters corresponding to '?' in the SQL string<br />@var array<br /><br /></p><p>Declaration :</p><ul><li>Uml : # paramArr : array =  array()</li><li>Php : protected $paramArr</li></ul><a name="refattribute164354"></a>
+<table><tr><td><div class="element">Attribute <b>autobound</b></div></td></tr></table>
+<p>If result variables are not bound manully and this property is TRUE,<br />they will be generated automatically after execution.<br />@var bool<br /><br /></p><p>Declaration :</p><ul><li>Uml : # autobound : bool =  TRUE</li><li>Php : protected $autobound</li></ul><a name="refoperation249346"></a>
+<table><tr><td><div class="element">Operation <b>__construct</b></div></td></tr></table><p>the constructor<br />@param string $conn<br />@param string $sql<br /><br /></p><p>Declaration :</p><ul><li>Uml : ~ __construct(inout conn : string, inout sql : string = NULL) : </li><li>Php :  function __construct(&amp; $conn, $sql = NULL) </li></ul><a name="refoperation249474"></a>
+<table><tr><td><div class="element">Operation <b>AddParam</b></div></td></tr></table><p>add a parameter with information of type and value<br />@param string $type<br />@param ??? $var<br /><br /></p><p>Declaration :</p><ul><li>Uml : + AddParam(inout type : string, inout value : ) : </li><li>Php : public function AddParam($type, $value) </li></ul><a name="refoperation249602"></a>
+<table><tr><td><div class="element">Operation <b>ClearParams</b></div></td></tr></table><p>remove all parameters<br /><br /></p><p>Declaration :</p><ul><li>Uml : + ClearParams() : </li><li>Php : public function ClearParams() </li></ul><a name="refoperation249730"></a>
+<table><tr><td><div class="element">Operation <b>BindResult</b></div></td></tr></table><p>bind a variable to a field in a select statement<br /><br />It is optional but should be involked before Execute();<br />Sequence depends on the SQL statement.<br /><br />@param mixed $var<br /><br /></p><p>Declaration :</p><ul><li>Uml : + BindResult(inout var : mixed) : </li><li>Php : public function BindResult(&amp; $var) </li></ul><a name="refoperation249858"></a>
+<table><tr><td><div class="element">Operation <b>ClearBoundResults</b></div></td></tr></table><p>remove all bound results<br /><br /></p><p>Declaration :</p><ul><li>Uml : + ClearBoundResults() : </li><li>Php : public function ClearBoundResults() </li></ul><a name="refoperation249986"></a>
+<table><tr><td><div class="element">Operation <b>Execute</b></div></td></tr></table><p>execute the sql statement<br />(add parameters using AddParam() before invoking this one)<br />@abstract<br />@return ${type}<br /><br /></p><p>Declaration :</p><ul><li>Uml : abstract, + Execute() : bool</li><li>Php : public abstract function Execute()</li></ul><a name="refoperation250114"></a>
+<table><tr><td><div class="element">Operation <b>ClearSTMT</b></div></td></tr></table><p>set free all resources used in an sql execution,<br />except for the SQL string, added parameters and bound variables<br /><br /></p><p>Declaration :</p><ul><li>Uml : abstract, + ClearSTMT() : </li><li>Php : public abstract function ClearSTMT()</li></ul><a name="refoperation250242"></a>
+<table><tr><td><div class="element">Operation <b>Fetch</b></div></td></tr></table><p>fetch a row from the result<br />@param int $t<br />&lt;table&gt;<br />&lt;tr&gt;&lt;th&gt;0&lt;/th&gt;&lt;td&gt;(default)return an array with field names as keys&lt;/td&gt;&lt;/tr&gt;<br />&lt;tr&gt;&lt;th&gt;1&lt;/th&gt;&lt;td&gt;return an object with field names as attributes&lt;/td&gt;&lt;/tr&gt;<br />&lt;tr&gt;&lt;th&gt;2&lt;/th&gt;&lt;td&gt;return an array with numbers as keys&lt;/td&gt;&lt;/tr&gt;<br />&lt;tr&gt;&lt;th&gt;3&lt;/th&gt;&lt;td&gt;return an array with both field names and numbers as keys&lt;/td&gt;&lt;/tr&gt;<br />&lt;/table&gt;<br />@return ${type}<br />if nothing is fetched then return FALSE;&lt;br /&gt;<br />if result is manually bound, return TRUE when succeeding;&lt;br /&gt;<br />if it is automatically bound to a buit-in attribute, &lt;br /&gt;<br />return an object when the parameter $t is 1 or an array when it is not 1.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + Fetch(inout t : int = 0) : mixed</li><li>Php : public function Fetch($t = 0) </li></ul><a name="refoperation250370"></a>
+<table><tr><td><div class="element">Operation <b>GetSTMT</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + GetSTMT() : </li><li>Php : public function GetSTMT() </li></ul></div>
+<p>All public operations : <a href="class149122.html#refoperation249474"><b>AddParam</b></a> , <a href="class149122.html#refoperation249730"><b>BindResult</b></a> , <a href="class149122.html#refoperation249858"><b>ClearBoundResults</b></a> , <a href="class149122.html#refoperation249602"><b>ClearParams</b></a> , <a href="class149122.html#refoperation250114"><b>ClearSTMT</b></a> , <a href="class149122.html#refoperation249986"><b>Execute</b></a> , <a href="class149122.html#refoperation250242"><b>Fetch</b></a> , <a href="class149122.html#refoperation250370"><b>GetSTMT</b></a> </p>
+</body>
+</html>

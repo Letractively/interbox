@@ -1,0 +1,35 @@
+<!-- Documentation produced by the Html generator of Bouml (http://bouml.free.fr) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class SQLCondition</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class SQLCondition</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="refclass149634"></a>
+<p>generating a part of SQL concerning conditions while selecting, like 'WHERE'<br />@version 0.2.20110314<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.common.database<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>Php :  class SQLCondition </li></ul><p>Artifact : <a href="index.html#refartifact149122"><b>SQLCondition.class</b></a></p>
+<div class="sub">
+<a name="refattribute164482"></a>
+<table><tr><td><div class="element">Attribute <b>cdt</b></div></td></tr></table>
+<p>generated expression of conditions in SQL statement<br />@var string<br /><br /></p><p>Declaration :</p><ul><li>Uml : - cdt : string =  ""</li><li>Php : private $cdt</li></ul><a name="refattribute164610"></a>
+<table><tr><td><div class="element">Attribute <b>c</b></div></td></tr></table>
+<p>number of conditions<br />@var int<br /><br /></p><p>Declaration :</p><ul><li>Uml : - c : int =  0</li><li>Php : private $c</li></ul><a name="refoperation251650"></a>
+<table><tr><td><div class="element">Operation <b>addLogical</b></div></td></tr></table><p>add a logical operator like 'AND' or 'OR'<br />@param int $l<br />an integer code for logical operators 'AND' and 'OR',<br />which connects the new condition and old ones;&lt;br /&gt;<br />constants and their values are listed below:<br />&lt;ul&gt;<br />&lt;li&gt;0 - IBC1_LOGICAL_AND&lt;/li&gt;<br />&lt;li&gt;1 - IBC1_LOGICAL_OR&lt;/li&gt;<br />&lt;/lu&gt;<br />@return ${type}<br />If there is no condition added when this method is involked,<br />or the parameter is of an invalid value, it returns FALSE.<br /><br /></p><p>Declaration :</p><ul><li>Uml : - addLogical(inout l : int) : bool</li><li>Php : private function addLogical($l) </li></ul><a name="refoperation251778"></a>
+<table><tr><td><div class="element">Operation <b>AddCondition</b></div></td></tr></table><p>add a new condition connected with a logical operator like 'AND' or 'OR'<br />@param mixed $c<br />an expression in form of string or a SQLCondition object<br />@param int $l<br />an integer code for logical operators 'AND' and 'OR',<br />which connects the new condition and old ones;&lt;br /&gt;<br />constants and their values are listed below:<br />&lt;ul&gt;<br />&lt;li&gt;0 - IBC1_LOGICAL_AND&lt;/li&gt;<br />&lt;li&gt;1 - IBC1_LOGICAL_OR&lt;/li&gt;<br />&lt;/lu&gt;<br />@return ${type}<br />If there is no new condition added then it will return FALSE.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + AddCondition(inout c : mixed, inout l : int = IBC1_LOGICAL_AND) : bool</li><li>Php : public function AddCondition($c, $l = IBC1_LOGICAL_AND) </li></ul><a name="refoperation251906"></a>
+<table><tr><td><div class="element">Operation <b>Count</b></div></td></tr></table><p>TODO: '?' may not be supported by all database connectors<br /><br />public function AddEqual($f, $v, $t=IBC1_DATATYPE_INTEGER, $r=IBC1_LOGICAL_AND) {<br />$this-&gt;select-&gt;AddCondition($f . "=?", $r);<br />$this-&gt;AddParam($t, $v);<br />}<br /><br />public function AddLike($f, $v, $l=IBC1_LOGICAL_AND) {//TODO: data formatting<br />$this-&gt;dtf-&gt;SetData($v, IBC1_DATATYPE_PURETEXT);<br />if ($this-&gt;HasError())<br />return FALSE;<br />$this-&gt;select-&gt;AddCondition($f . " LIKE \"%" . $this-&gt;dtf-&gt;GetData() . "%\"", $l);<br />}<br /><br /><br />get the counted number of conditions<br />@return ${type}<br /><br /></p><p>Declaration :</p><ul><li>Uml : + Count() : int</li><li>Php : public function Count() </li></ul><a name="refoperation252034"></a>
+<table><tr><td><div class="element">Operation <b>Clear</b></div></td></tr></table><p>remove all conditions in the current object<br /><br /></p><p>Declaration :</p><ul><li>Uml : + Clear() : </li><li>Php : public function Clear() </li></ul><a name="refoperation252162"></a>
+<table><tr><td><div class="element">Operation <b>GetExpression</b></div></td></tr></table><p>get the generated expression<br />@return ${type}<br /><br /></p><p>Declaration :</p><ul><li>Uml : + GetExpression() : string</li><li>Php : public function GetExpression() </li></ul></div>
+<p>All public operations : <a href="class149634.html#refoperation251778"><b>AddCondition</b></a> , <a href="class149634.html#refoperation252034"><b>Clear</b></a> , <a href="class149634.html#refoperation251906"><b>Count</b></a> , <a href="class149634.html#refoperation252162"><b>GetExpression</b></a> </p>
+</body>
+</html>

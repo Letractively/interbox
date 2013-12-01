@@ -1,0 +1,43 @@
+<!-- Documentation produced by the Html generator of Bouml (http://bouml.free.fr) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ServiceManager</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ServiceManager</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="refclass147586"></a>
+<p>@name InterBox Core For PHP<br />@version Model 1.3, Program 0.6<br />@author GuZhiji Studio<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>Php :  class ServiceManager </li></ul><p>Directly inherited by : <a href="class147458.html#refclass147458"><b>CatalogManager</b></a> <a href="class152450.html#refclass152450"><b>PageManager</b></a> <a href="class153730.html#refclass153730"><b>ResourceManager</b></a> <a href="class154370.html#refclass154370"><b>ResourceManager</b></a> <a href="class154754.html#refclass154754"><b>SettingManager</b></a> <a href="class155650.html#refclass155650"><b>UserManager</b></a> <a href="class156546.html#refclass156546"><b>VoteManager</b></a> </p>
+<p>Artifact : <a href="index.html#refartifact151938"><b>ServiceManager.class</b></a></p>
+<div class="sub">
+<a name="refattribute170498"></a>
+<table><tr><td><div class="element">Attribute <b>ConnObj</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - ConnObj : </li><li>Php : private $ConnObj</li></ul><a name="refattribute170626"></a>
+<table><tr><td><div class="element">Attribute <b>ErrorList</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - ErrorList : </li><li>Php : private $ErrorList</li></ul><a name="refoperation276738"></a>
+<table><tr><td><div class="element">Operation <b>__construct</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : ~ __construct(inout conn : <a href="class146946.html#refclass146946"><b>DBConnProvider</b></a>, inout EL : <a href="class147074.html#refclass147074"><b>ErrorList</b></a> = NULL) : </li><li>Php :  function __construct(<a href="class146946.html#refclass146946"><b>DBConnProvider</b></a> $conn, <a href="class147074.html#refclass147074"><b>ErrorList</b></a> $EL = NULL) </li></ul><a name="refoperation276866"></a>
+<table><tr><td><div class="element">Operation <b>CreateTables</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : # CreateTables(inout sqlset : , inout conn :  = NULL) : </li><li>Php : protected function CreateTables(&amp; $sqlset, $conn = NULL) </li></ul><a name="refoperation276994"></a>
+<table><tr><td><div class="element">Operation <b>OpenDB</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + OpenDB(inout conn : <a href="class146946.html#refclass146946"><b>DBConnProvider</b></a>) : </li><li>Php : public function OpenDB(<a href="class146946.html#refclass146946"><b>DBConnProvider</b></a> $conn) </li></ul><a name="refoperation277122"></a>
+<table><tr><td><div class="element">Operation <b>GetError</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + GetError() : </li><li>Php : public function GetError() </li></ul><a name="refoperation277250"></a>
+<table><tr><td><div class="element">Operation <b>GetDBConn</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + GetDBConn() : </li><li>Php : public function GetDBConn() </li></ul><a name="refoperation277378"></a>
+<table><tr><td><div class="element">Operation <b>IsInstalled</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + IsInstalled() : </li><li>Php : public function IsInstalled() </li></ul><a name="refoperation277506"></a>
+<table><tr><td><div class="element">Operation <b>Install</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Install() : </li><li>Php : public function Install() </li></ul><a name="refoperation277634"></a>
+<table><tr><td><div class="element">Operation <b>Exists</b></div></td></tr></table><p>check if a service exists<br />@param string $ServiceName<br />@param string $ServiceType<br />if ignore the parameter or give an empty string to it,<br />type of the designated service won't be checked<br />@param bool $checkvalid<br />if ignore the parameter or give a FALSE value to it,<br />it is not expected to check if the format of $ServiceName is valid,<br />then an error reported rather than a FALSE value returned when it is invalid.<br />@return ${type}<br /><br /></p><p>Declaration :</p><ul><li>Uml : + Exists(inout ServiceName : string, inout ServiceType : string = "", inout checkvalid : bool = FALSE) : bool</li><li>Php : public function Exists($ServiceName, $ServiceType = "", $checkvalid = FALSE) </li></ul><a name="refoperation277762"></a>
+<table><tr><td><div class="element">Operation <b>DropBackup</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + DropBackup(inout id : ) : </li><li>Php : public function DropBackup($id) </li></ul><a name="refoperation277890"></a>
+<table><tr><td><div class="element">Operation <b>BackupTable</b></div></td></tr></table><p>++++++++++++++++++++++++++test+++++++++++++++++++++++++++++<br /></p><p>Declaration :</p><ul><li>Uml : - BackupTable(inout tlongname : , inout tshortname : , inout id : ) : </li><li>Php : private function BackupTable($tlongname, $tshortname, $id) </li></ul><a name="refoperation278018"></a>
+<table><tr><td><div class="element">Operation <b>Backup2</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Backup2(inout ServiceName : ) : </li><li>Php : public function Backup2($ServiceName) </li></ul><a name="refoperation278146"></a>
+<table><tr><td><div class="element">Operation <b>Restore2</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Restore2(inout ID : ) : </li><li>Php : public function Restore2($ID) </li></ul></div>
+<p>All public operations : <a href="class147586.html#refoperation278018"><b>Backup2</b></a> , <a href="class147586.html#refoperation277762"><b>DropBackup</b></a> , <a href="class147586.html#refoperation277634"><b>Exists</b></a> , <a href="class147586.html#refoperation277250"><b>GetDBConn</b></a> , <a href="class147586.html#refoperation277122"><b>GetError</b></a> , <a href="class147586.html#refoperation277506"><b>Install</b></a> , <a href="class147586.html#refoperation277378"><b>IsInstalled</b></a> , <a href="class147586.html#refoperation276994"><b>OpenDB</b></a> , <a href="class147586.html#refoperation278146"><b>Restore2</b></a> </p>
+</body>
+</html>

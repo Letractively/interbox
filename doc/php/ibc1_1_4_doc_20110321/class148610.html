@@ -1,0 +1,40 @@
+<!-- Documentation produced by the Html generator of Bouml (http://bouml.free.fr) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ItemList</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ItemList</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="refclass148610"></a>
+<p>list for any items<br />@version 0.7.20110316<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.common<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>Php :  class ItemList </li></ul><p>Directly inherited by : <a href="class147074.html#refclass147074"><b>ErrorList</b></a> <a href="class150018.html#refclass150018"><b>SQLFieldExpList</b></a> <a href="class148738.html#refclass148738"><b>WordList</b></a> </p>
+<p>Artifact : <a href="index.html#refartifact147842"><b>ItemList.class</b></a></p>
+<div class="sub">
+<a name="refattribute162178"></a>
+<table><tr><td><div class="element">Attribute <b>_item</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # _item :  =  array()</li><li>Php : protected $_item</li></ul><a name="refoperation241666"></a>
+<table><tr><td><div class="element">Operation <b>GetItem</b></div></td></tr></table><p>return a certain item if an index is referred, or the current item;<br />if the given index does not exist, return NULL<br />@param int index<br />@return ${type}<br /><br /></p><p>Declaration :</p><ul><li>Uml : + GetItem(inout index : int = -1) : mixed</li><li>Php : public function GetItem($index = -1) </li></ul><a name="refoperation241794"></a>
+<table><tr><td><div class="element">Operation <b>GetIndex</b></div></td></tr></table><p>return current index, return -1 if the index is invalid<br />@return ${type}<br /><br /></p><p>Declaration :</p><ul><li>Uml : + GetIndex() : int</li><li>Php : public function GetIndex() </li></ul><a name="refoperation241922"></a>
+<table><tr><td><div class="element">Operation <b>GetEach</b></div></td></tr></table><p>return the current item and move to the next<br />@return ${type}<br /><br /></p><p>Declaration :</p><ul><li>Uml : + GetEach() : mixed</li><li>Php : public function GetEach() </li></ul><a name="refoperation242050"></a>
+<table><tr><td><div class="element">Operation <b>MoveFirst</b></div></td></tr></table><p>set index 0<br /><br />strongly recommend you involk this method before using GetEach() in a WHILE loop<br /><br /></p><p>Declaration :</p><ul><li>Uml : + MoveFirst() : </li><li>Php : public function MoveFirst() </li></ul><a name="refoperation242178"></a>
+<table><tr><td><div class="element">Operation <b>MoveNext</b></div></td></tr></table><p>add 1 to current index so as to get the next item via GetItem()<br /><br /></p><p>Declaration :</p><ul><li>Uml : + MoveNext() : </li><li>Php : public function MoveNext() </li></ul><a name="refoperation242306"></a>
+<table><tr><td><div class="element">Operation <b>ItemExists</b></div></td></tr></table><p>check if the given index exists<br />@return ${type}<br /><br /></p><p>Declaration :</p><ul><li>Uml : + ItemExists(inout index : ) : bool</li><li>Php : public function ItemExists($index) </li></ul><a name="refoperation242434"></a>
+<table><tr><td><div class="element">Operation <b>ValueExists</b></div></td></tr></table><p>check if the given value exists<br />@return ${type}<br /><br /></p><p>Declaration :</p><ul><li>Uml : + ValueExists(inout value : ) : bool</li><li>Php : public function ValueExists($value) </li></ul><a name="refoperation242562"></a>
+<table><tr><td><div class="element">Operation <b>AddItem</b></div></td></tr></table><p>add a item to the list<br />@param mixed item<br /><br /></p><p>Declaration :</p><ul><li>Uml : + AddItem(inout item : mixed) : </li><li>Php : public function AddItem($item) </li></ul><a name="refoperation242690"></a>
+<table><tr><td><div class="element">Operation <b>Remove</b></div></td></tr></table><p>remove an item from the list<br /><br /></p><p>Declaration :</p><ul><li>Uml : + Remove(inout index : ) : </li><li>Php : public function Remove($index) </li></ul><a name="refoperation242818"></a>
+<table><tr><td><div class="element">Operation <b>Count</b></div></td></tr></table><p>return the number of items in the list<br />@return ${type}<br /><br /></p><p>Declaration :</p><ul><li>Uml : + Count() : int</li><li>Php : public function Count() </li></ul><a name="refoperation242946"></a>
+<table><tr><td><div class="element">Operation <b>Clear</b></div></td></tr></table><p>remove all items from the list<br /><br /></p><p>Declaration :</p><ul><li>Uml : + Clear() : </li><li>Php : public function Clear() </li></ul></div>
+<p>All public operations : <a href="class148610.html#refoperation242562"><b>AddItem</b></a> , <a href="class148610.html#refoperation242946"><b>Clear</b></a> , <a href="class148610.html#refoperation242818"><b>Count</b></a> , <a href="class148610.html#refoperation241922"><b>GetEach</b></a> , <a href="class148610.html#refoperation241794"><b>GetIndex</b></a> , <a href="class148610.html#refoperation241666"><b>GetItem</b></a> , <a href="class148610.html#refoperation242306"><b>ItemExists</b></a> , <a href="class148610.html#refoperation242050"><b>MoveFirst</b></a> , <a href="class148610.html#refoperation242178"><b>MoveNext</b></a> , <a href="class148610.html#refoperation242690"><b>Remove</b></a> , <a href="class148610.html#refoperation242434"><b>ValueExists</b></a> </p>
+</body>
+</html>

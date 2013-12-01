@@ -1,0 +1,27 @@
+<!-- Documentation produced by the Html generator of Bouml (http://bouml.free.fr) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class SQLFieldDefList</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class SQLFieldDefList</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="refclass149890"></a>
+<p>field list with greater details for field definition<br />@version 0.2.20110314<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.common.database<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>Php :  class SQLFieldDefList extends <a href="class148354.html#refclass148354"><b>PropertyList</b></a> </li></ul><p>Artifact : <a href="index.html#refartifact149378"><b>SQLFieldDefList.class</b></a></p>
+<div class="sub">
+<a name="refoperation253058"></a>
+<table><tr><td><div class="element">Operation <b>AddField</b></div></td></tr></table><p>add a field definition into the list<br />@param string $fieldname<br />@param int $fieldtype<br />constants defined as IBC1_DATATYPE_[type name];default value is IBC1_DATATYPE_INTEGER<br />@param int $length<br />default value is 1<br />@param bool $isnull<br />default value is TRUE<br />@param string $default<br />default value is null<br />@param bool $ispkey<br />TRUE if the field is the primary key of the table; default value is FALSE<br />@param string $keyname<br />@param bool $autoincrement<br />Only when data type of the field is int or<br />$fieldtype is IBC1_DATATYPE_INTEGER,<br />this parameter can be given the value of TRUE.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + AddField(inout fieldname : string, inout fieldtype : int = IBC1_DATATYPE_INTEGER, inout length : int = 1, inout isnull : bool = TRUE, inout default : string = NULL, inout ispkey : bool = FALSE, inout keyname : string = "", inout autoincrement : bool = FALSE) : </li><li>Php : public function AddField($fieldname, $fieldtype = IBC1_DATATYPE_INTEGER, $length = 1, $isnull = TRUE, $default = NULL, $ispkey = FALSE, $keyname = "", $autoincrement = FALSE) </li></ul></div>
+<p>All public operations : <a href="class149890.html#refoperation253058"><b>AddField</b></a> , <a href="class148354.html#refoperation243202"><b>AppendValue</b></a> , <a href="class148354.html#refoperation244354"><b>Clear</b></a> , <a href="class148354.html#refoperation244482"><b>Count</b></a> , <a href="class148354.html#refoperation243586"><b>GetEach</b></a> , <a href="class148354.html#refoperation243330"><b>GetKey</b></a> , <a href="class148354.html#refoperation243458"><b>GetValue</b></a> , <a href="class148354.html#refoperation243970"><b>KeyExists</b></a> , <a href="class148354.html#refoperation243714"><b>MoveFirst</b></a> , <a href="class148354.html#refoperation243842"><b>MoveNext</b></a> , <a href="class148354.html#refoperation244226"><b>Remove</b></a> , <a href="class148354.html#refoperation243074"><b>SetValue</b></a> , <a href="class148354.html#refoperation244098"><b>ValueExists</b></a> </p>
+</body>
+</html>

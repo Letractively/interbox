@@ -1,0 +1,45 @@
+<!-- Documentation produced by the Html generator of Bouml (http://bouml.free.fr) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class MySQLiSelect</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class MySQLiSelect</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="refclass151298"></a>
+<p>a SELECT statement for MySQL via mysqli<br />@version 0.7.20110315<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.common.database.mysqli<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>Php :  class MySQLiSelect extends <a href="class151042.html#refclass151042"><b>MySQLiSTMT</b></a> implements <a href="class149378.html#refclass149378"><b>FieldExpListInterface</b></a>, <a href="class148866.html#refclass148866"><b>ConditionInterface</b></a> </li></ul><p>Artifact : <a href="index.html#refartifact150658"><b>MySQLiSelect.class</b></a></p>
+<div class="sub">
+<a name="refattribute167426"></a>
+<table><tr><td><div class="element">Attribute <b>select</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # select : </li><li>Php : protected $select</li></ul><a name="refattribute167554"></a>
+<table><tr><td><div class="element">Attribute <b>limit</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # limit :  =  ""</li><li>Php : protected $limit</li></ul><a name="refoperation262018"></a>
+<table><tr><td><div class="element">Operation <b>__construct</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : ~ __construct(inout t :  = "", inout conn :  = NULL) : </li><li>Php :  function __construct($t = "", $conn = NULL) </li></ul><a name="refoperation262146"></a>
+<table><tr><td><div class="element">Operation <b>SetTable</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetTable(inout t : ) : </li><li>Php : public function SetTable($t) </li></ul><a name="refoperation262274"></a>
+<table><tr><td><div class="element">Operation <b>JoinTable</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + JoinTable(inout t : , inout on : ) : </li><li>Php : public function JoinTable($t, $on) </li></ul><a name="refoperation262402"></a>
+<table><tr><td><div class="element">Operation <b>AddField</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + AddField(inout exp : , inout alias :  = "") : </li><li>Php : public function AddField($exp, $alias = "") </li></ul><a name="refoperation262530"></a>
+<table><tr><td><div class="element">Operation <b>ClearFields</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ClearFields() : </li><li>Php : public function ClearFields() </li></ul><a name="refoperation262658"></a>
+<table><tr><td><div class="element">Operation <b>FieldCount</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + FieldCount() : </li><li>Php : public function FieldCount() </li></ul><a name="refoperation262786"></a>
+<table><tr><td><div class="element">Operation <b>AddCondition</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + AddCondition(inout c : , inout l :  = IBC1_LOGICAL_AND) : </li><li>Php : public function AddCondition($c, $l = IBC1_LOGICAL_AND) </li></ul><a name="refoperation262914"></a>
+<table><tr><td><div class="element">Operation <b>AddEqual</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + AddEqual(inout f : , inout v : , inout t :  = IBC1_DATATYPE_INTEGER, inout r :  = IBC1_LOGICAL_AND) : </li><li>Php : public function AddEqual($f, $v, $t = IBC1_DATATYPE_INTEGER, $r = IBC1_LOGICAL_AND) </li></ul><a name="refoperation263042"></a>
+<table><tr><td><div class="element">Operation <b>AddLike</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + AddLike(inout f : , inout v : , inout l :  = IBC1_LOGICAL_AND) : </li><li>Php : public function AddLike($f, $v, $l = IBC1_LOGICAL_AND) </li></ul><a name="refoperation263170"></a>
+<table><tr><td><div class="element">Operation <b>ClearConditions</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ClearConditions() : </li><li>Php : public function ClearConditions() </li></ul><a name="refoperation263298"></a>
+<table><tr><td><div class="element">Operation <b>ConditionCount</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ConditionCount() : </li><li>Php : public function ConditionCount() </li></ul><a name="refoperation263426"></a>
+<table><tr><td><div class="element">Operation <b>OrderBy</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + OrderBy(inout field : , inout mode :  = IBC1_ORDER_ASC) : </li><li>Php : public function OrderBy($field, $mode = IBC1_ORDER_ASC) </li></ul><a name="refoperation263554"></a>
+<table><tr><td><div class="element">Operation <b>GroupBy</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + GroupBy(inout field : , inout having :  = "") : </li><li>Php : public function GroupBy($field, $having = "") </li></ul><a name="refoperation263682"></a>
+<table><tr><td><div class="element">Operation <b>SetLimit</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetLimit(inout PageSize : , inout PageNumber : ) : </li><li>Php : public function SetLimit($PageSize, $PageNumber) </li></ul><a name="refoperation263810"></a>
+<table><tr><td><div class="element">Operation <b>Execute</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Execute() : </li><li>Php : public function Execute() </li></ul></div>
+<p>All public operations : <a href="class148866.html#refoperation245122"><b>AddCondition</b></a> , <a href="class151298.html#refoperation262786"><b>AddCondition</b></a> , <a href="class151298.html#refoperation262914"><b>AddEqual</b></a> , <a href="class149378.html#refoperation250882"><b>AddField</b></a> , <a href="class151298.html#refoperation262402"><b>AddField</b></a> , <a href="class151298.html#refoperation263042"><b>AddLike</b></a> , <a href="class149122.html#refoperation249474"><b>AddParam</b></a> , <a href="class151042.html#refoperation263938"><b>AddParam</b></a> , <a href="class149122.html#refoperation249730"><b>BindResult</b></a> , <a href="class149122.html#refoperation249858"><b>ClearBoundResults</b></a> , <a href="class148866.html#refoperation245250"><b>ClearConditions</b></a> , <a href="class151298.html#refoperation263170"><b>ClearConditions</b></a> , <a href="class149378.html#refoperation251010"><b>ClearFields</b></a> , <a href="class151298.html#refoperation262530"><b>ClearFields</b></a> , <a href="class149122.html#refoperation249602"><b>ClearParams</b></a> , <a href="class149122.html#refoperation250114"><b>ClearSTMT</b></a> , <a href="class151042.html#refoperation264578"><b>ClearSTMT</b></a> , <a href="class148866.html#refoperation245378"><b>ConditionCount</b></a> , <a href="class151298.html#refoperation263298"><b>ConditionCount</b></a> , <a href="class149122.html#refoperation249986"><b>Execute</b></a> , <a href="class151298.html#refoperation263810"><b>Execute</b></a> , <a href="class151042.html#refoperation264450"><b>Execute</b></a> , <a href="class149122.html#refoperation250242"><b>Fetch</b></a> , <a href="class149378.html#refoperation251138"><b>FieldCount</b></a> , <a href="class151298.html#refoperation262658"><b>FieldCount</b></a> , <a href="class149122.html#refoperation250370"><b>GetSTMT</b></a> , <a href="class151298.html#refoperation263554"><b>GroupBy</b></a> , <a href="class151298.html#refoperation262274"><b>JoinTable</b></a> , <a href="class151298.html#refoperation263426"><b>OrderBy</b></a> , <a href="class151298.html#refoperation263682"><b>SetLimit</b></a> , <a href="class151298.html#refoperation262146"><b>SetTable</b></a> </p>
+</body>
+</html>

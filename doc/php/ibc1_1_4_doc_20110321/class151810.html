@@ -1,0 +1,61 @@
+<!-- Documentation produced by the Html generator of Bouml (http://bouml.free.fr) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ServiceList</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ServiceList</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="refclass151810"></a>
+<p>@name InterBox Core For PHP<br />@version Model 1.3, Program 0.6 <br />@author GuZhiji Studio<br /><br />ServiceList.class.php<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>Php :  class ServiceList </li></ul><p>Directly inherited by : <a href="class151682.html#refclass151682"><b>BackupListReader</b></a> <a href="class152066.html#refclass152066"><b>ServiceListReader</b></a> </p>
+<p>Artifact : <a href="index.html#refartifact151682"><b>ServiceList.class</b></a></p>
+<div class="sub">
+<a name="refattribute169474"></a>
+<table><tr><td><div class="element">Attribute <b>_ConnObj</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _ConnObj :  = NULL</li><li>Php : private $_ConnObj</li></ul><a name="refattribute169602"></a>
+<table><tr><td><div class="element">Attribute <b>_ErrorList</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _ErrorList :  = NULL</li><li>Php : private $_ErrorList</li></ul><a name="refattribute169730"></a>
+<table><tr><td><div class="element">Attribute <b>_PageSize</b></div></td></tr></table>
+<p>private $_list;<br /></p><p>Declaration :</p><ul><li>Uml : - _PageSize :  = 0</li><li>Php : private $_PageSize</li></ul><a name="refattribute169858"></a>
+<table><tr><td><div class="element">Attribute <b>_PageNumber</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _PageNumber :  = 0</li><li>Php : private $_PageNumber</li></ul><a name="refattribute169986"></a>
+<table><tr><td><div class="element">Attribute <b>_PageCount</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _PageCount :  = 0</li><li>Php : private $_PageCount</li></ul><a name="refattribute170114"></a>
+<table><tr><td><div class="element">Attribute <b>_ItemCount</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _ItemCount :  = 0</li><li>Php : private $_ItemCount</li></ul><a name="refattribute170242"></a>
+<table><tr><td><div class="element">Attribute <b>_TotalCount</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _TotalCount :  = 0</li><li>Php : private $_TotalCount</li></ul><a name="refattribute170370"></a>
+<table><tr><td><div class="element">Attribute <b>_Item</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _Item :  = array()</li><li>Php : private $_Item</li></ul><a name="refoperation274050"></a>
+<table><tr><td><div class="element">Operation <b>__construct</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : ~ __construct(inout Conn : , inout EL :  = NULL) : </li><li>Php :  function __construct($Conn, $EL = NULL) </li></ul><a name="refoperation274178"></a>
+<table><tr><td><div class="element">Operation <b>GetDBConn</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + GetDBConn() : </li><li>Php : public function GetDBConn() </li></ul><a name="refoperation274306"></a>
+<table><tr><td><div class="element">Operation <b>GetError</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + GetError() : </li><li>Php : public function GetError() </li></ul><a name="refoperation274434"></a>
+<table><tr><td><div class="element">Operation <b>OpenConn</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + OpenConn(inout Conn : ) : </li><li>Php : public function OpenConn($Conn) </li></ul><a name="refoperation274562"></a>
+<table><tr><td><div class="element">Operation <b>CloseConn</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + CloseConn() : </li><li>Php : public function CloseConn() </li></ul><a name="refoperation274690"></a>
+<table><tr><td><div class="element">Operation <b>GetPageSize</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + GetPageSize() : </li><li>Php : public function GetPageSize() </li></ul><a name="refoperation274818"></a>
+<table><tr><td><div class="element">Operation <b>SetPageSize</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetPageSize(inout s : ) : </li><li>Php : public function SetPageSize($s) </li></ul><a name="refoperation274946"></a>
+<table><tr><td><div class="element">Operation <b>GetPageNumber</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + GetPageNumber() : </li><li>Php : public function GetPageNumber() </li></ul><a name="refoperation275074"></a>
+<table><tr><td><div class="element">Operation <b>SetPageNumber</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetPageNumber(inout n : ) : </li><li>Php : public function SetPageNumber($n) </li></ul><a name="refoperation275202"></a>
+<table><tr><td><div class="element">Operation <b>GetPageCount</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + GetPageCount() : </li><li>Php : public function GetPageCount() </li></ul><a name="refoperation275330"></a>
+<table><tr><td><div class="element">Operation <b>Count</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Count() : </li><li>Php : public function Count() </li></ul><a name="refoperation275458"></a>
+<table><tr><td><div class="element">Operation <b>GetTotalCount</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + GetTotalCount() : </li><li>Php : public function GetTotalCount() </li></ul><a name="refoperation275586"></a>
+<table><tr><td><div class="element">Operation <b>GetItem</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + GetItem(inout index : ) : </li><li>Php : public function GetItem($index) </li></ul><a name="refoperation275714"></a>
+<table><tr><td><div class="element">Operation <b>GetEach</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + GetEach() : </li><li>Php : public function GetEach() </li></ul><a name="refoperation275842"></a>
+<table><tr><td><div class="element">Operation <b>AddItem</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : # AddItem(inout item : ) : </li><li>Php : protected function AddItem($item) </li></ul><a name="refoperation275970"></a>
+<table><tr><td><div class="element">Operation <b>Clear</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : # Clear() : </li><li>Php : protected function Clear() </li></ul><a name="refoperation276098"></a>
+<table><tr><td><div class="element">Operation <b>GetCounts1</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : # GetCounts1(inout sql : ) : </li><li>Php : protected function GetCounts1($sql) </li></ul><a name="refoperation276226"></a>
+<table><tr><td><div class="element">Operation <b>GetCounts2</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : # GetCounts2() : </li><li>Php : protected function GetCounts2() </li></ul></div>
+<p>All public operations : <a href="class151810.html#refoperation274562"><b>CloseConn</b></a> , <a href="class151810.html#refoperation275330"><b>Count</b></a> , <a href="class151810.html#refoperation274178"><b>GetDBConn</b></a> , <a href="class151810.html#refoperation275714"><b>GetEach</b></a> , <a href="class151810.html#refoperation274306"><b>GetError</b></a> , <a href="class151810.html#refoperation275586"><b>GetItem</b></a> , <a href="class151810.html#refoperation275202"><b>GetPageCount</b></a> , <a href="class151810.html#refoperation274946"><b>GetPageNumber</b></a> , <a href="class151810.html#refoperation274690"><b>GetPageSize</b></a> , <a href="class151810.html#refoperation275458"><b>GetTotalCount</b></a> , <a href="class151810.html#refoperation274434"><b>OpenConn</b></a> , <a href="class151810.html#refoperation275074"><b>SetPageNumber</b></a> , <a href="class151810.html#refoperation274818"><b>SetPageSize</b></a> </p>
+</body>
+</html>

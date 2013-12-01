@@ -1,0 +1,46 @@
+<!-- Documentation produced by the Html generator of Bouml (http://bouml.free.fr) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ContentListEditor</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ContentListEditor</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="refclass147970"></a>
+<p>@version 0.6<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.catalog<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>Php :  class ContentListEditor extends <a href="class147330.html#refclass147330"><b>DataList</b></a> </li></ul><p>Artifact : <a href="index.html#refartifact147202"><b>ContentListEditor.class</b></a></p>
+<div class="sub">
+<a name="refattribute160642"></a>
+<table><tr><td><div class="element">Attribute <b>keywords</b></div></td></tr></table>
+<p>ContentListReader<br /></p><p>Declaration :</p><ul><li>Uml : - keywords :  =  NULL</li><li>Php : private $keywords</li></ul><a name="refattribute160770"></a>
+<table><tr><td><div class="element">Attribute <b>cid</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - cid :  =  0</li><li>Php : private $cid</li></ul><a name="refattribute160898"></a>
+<table><tr><td><div class="element">Attribute <b>uid</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - uid :  =  ""</li><li>Php : private $uid</li></ul><a name="refattribute161026"></a>
+<table><tr><td><div class="element">Attribute <b>name</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - name :  =  ""</li><li>Php : private $name</li></ul><a name="refattribute161154"></a>
+<table><tr><td><div class="element">Attribute <b>nameExact</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - nameExact :  =  FALSE</li><li>Php : private $nameExact</li></ul><a name="refoperation236162"></a>
+<table><tr><td><div class="element">Operation <b>__construct</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : ~ __construct(inout Conns : <a href="class146946.html#refclass146946"><b>DBConnProvider</b></a>, inout ServiceName : , inout EL : <a href="class147074.html#refclass147074"><b>ErrorList</b></a> = NULL) : </li><li>Php :  function __construct(<a href="class146946.html#refclass146946"><b>DBConnProvider</b></a> $Conns, $ServiceName, <a href="class147074.html#refclass147074"><b>ErrorList</b></a> $EL = NULL) </li></ul><a name="refoperation236290"></a>
+<table><tr><td><div class="element">Operation <b>OpenService</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + OpenService(inout Conns : <a href="class146946.html#refclass146946"><b>DBConnProvider</b></a>, inout ServiceName : ) : </li><li>Php : public function OpenService(<a href="class146946.html#refclass146946"><b>DBConnProvider</b></a> $Conns, $ServiceName) </li></ul><a name="refoperation236418"></a>
+<table><tr><td><div class="element">Operation <b>AddID</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + AddID(inout id : ) : </li><li>Php : public function AddID($id) </li></ul><a name="refoperation236546"></a>
+<table><tr><td><div class="element">Operation <b>SetName</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetName(inout name : , inout exact :  = FALSE) : </li><li>Php : public function SetName($name, $exact = FALSE) </li></ul><a name="refoperation236674"></a>
+<table><tr><td><div class="element">Operation <b>SetKeywords</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetKeywords(inout KeyText : ) : </li><li>Php : public function SetKeywords($KeyText) </li></ul><a name="refoperation236802"></a>
+<table><tr><td><div class="element">Operation <b>SetCatalog</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetCatalog(inout ID : ) : </li><li>Php : public function SetCatalog($ID) </li></ul><a name="refoperation236930"></a>
+<table><tr><td><div class="element">Operation <b>SetAdmin</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetAdmin(inout UID : ) : </li><li>Php : public function SetAdmin($UID) </li></ul><a name="refoperation237058"></a>
+<table><tr><td><div class="element">Operation <b>SetSQLObject</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - SetSQLObject(inout sql : ) : </li><li>Php : private function SetSQLObject(&amp; $sql) </li></ul><a name="refoperation237186"></a>
+<table><tr><td><div class="element">Operation <b>Delete</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Delete() : </li><li>Php : public function Delete() </li></ul><a name="refoperation237314"></a>
+<table><tr><td><div class="element">Operation <b>MoveTo</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + MoveTo(inout CatalogID : ) : </li><li>Php : public function MoveTo($CatalogID) </li></ul></div>
+<p>All public operations : <a href="class147970.html#refoperation236418"><b>AddID</b></a> , <a href="class147330.html#refoperation272514"><b>AddItem</b></a> , <a href="class147330.html#refoperation272898"><b>Clear</b></a> , <a href="class147330.html#refoperation270338"><b>CloseService</b></a> , <a href="class151938.html#refoperation273282"><b>CloseService</b></a> , <a href="class147330.html#refoperation272770"><b>Count</b></a> , <a href="class147970.html#refoperation237186"><b>Delete</b></a> , <a href="class151938.html#refoperation273794"><b>GetDBConn</b></a> , <a href="class151938.html#refoperation273666"><b>GetDBConns</b></a> , <a href="class147330.html#refoperation271874"><b>GetEach</b></a> , <a href="class151938.html#refoperation273922"><b>GetError</b></a> , <a href="class147330.html#refoperation271746"><b>GetIndex</b></a> , <a href="class147330.html#refoperation271618"><b>GetItem</b></a> , <a href="class147330.html#refoperation270978"><b>GetPageCount</b></a> , <a href="class147330.html#refoperation270722"><b>GetPageNumber</b></a> , <a href="class147330.html#refoperation270466"><b>GetPageSize</b></a> , <a href="class151938.html#refoperation273538"><b>GetServiceName</b></a> , <a href="class147330.html#refoperation271106"><b>GetTotalCount</b></a> , <a href="class151938.html#refoperation273410"><b>IsServiceOpen</b></a> , <a href="class147330.html#refoperation272258"><b>ItemExists</b></a> , <a href="class147330.html#refoperation272002"><b>MoveFirst</b></a> , <a href="class147330.html#refoperation272130"><b>MoveNext</b></a> , <a href="class147970.html#refoperation237314"><b>MoveTo</b></a> , <a href="class147970.html#refoperation236290"><b>OpenService</b></a> , <a href="class147330.html#refoperation270210"><b>OpenService</b></a> , <a href="class151938.html#refoperation273154"><b>OpenService</b></a> , <a href="class147330.html#refoperation272642"><b>Remove</b></a> , <a href="class147970.html#refoperation236930"><b>SetAdmin</b></a> , <a href="class147970.html#refoperation236802"><b>SetCatalog</b></a> , <a href="class147970.html#refoperation236674"><b>SetKeywords</b></a> , <a href="class147970.html#refoperation236546"><b>SetName</b></a> , <a href="class147330.html#refoperation270850"><b>SetPageNumber</b></a> , <a href="class147330.html#refoperation270594"><b>SetPageSize</b></a> , <a href="class147330.html#refoperation272386"><b>ValueExists</b></a> </p>
+</body>
+</html>

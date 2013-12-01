@@ -1,0 +1,41 @@
+<!-- Documentation produced by the Html generator of Bouml (http://bouml.free.fr) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class PropertyList</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class PropertyList</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="refclass148354"></a>
+<p>list for properties with keys and values<br />@version 0.7.20110316<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.common<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>Php :  class PropertyList </li></ul><p>Directly inherited by : <a href="class148226.html#refclass148226"><b>ConfigInfo</b></a> <a href="class152578.html#refclass152578"><b>PanelTplProcessor</b></a> <a href="class149890.html#refclass149890"><b>SQLFieldDefList</b></a> <a href="class150146.html#refclass150146"><b>SQLFieldValList</b></a> </p>
+<p>Artifact : <a href="index.html#refartifact147970"><b>PropertyList.class</b></a></p>
+<div class="sub">
+<a name="refattribute162306"></a>
+<table><tr><td><div class="element">Attribute <b>_item</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # _item :  =  array()</li><li>Php : protected $_item</li></ul><a name="refoperation243074"></a>
+<table><tr><td><div class="element">Operation <b>SetValue</b></div></td></tr></table><p>set a value to its key<br /><br />replace the old value if the key exists;<br />add a new key in the list together with its value and type<br />@param string $key<br />@param mixed $value<br />@param int $type<br /><br /></p><p>Declaration :</p><ul><li>Uml : + SetValue(inout key : string, inout value : mixed, inout type : int = IBC1_DATATYPE_INTEGER) : </li><li>Php : public function SetValue($key, $value, $type = IBC1_DATATYPE_INTEGER) </li></ul><a name="refoperation243202"></a>
+<table><tr><td><div class="element">Operation <b>AppendValue</b></div></td></tr></table><p>append a string to the end of a value specified by the given key<br />(this method only works if the original type is IBC1_DATATYPE_PURETEXT)<br />@param string $key<br />@param string $value<br />@return ${type}<br /><br /></p><p>Declaration :</p><ul><li>Uml : + AppendValue(inout key : string, inout value : string) : bool</li><li>Php : public function AppendValue($key, $value) </li></ul><a name="refoperation243330"></a>
+<table><tr><td><div class="element">Operation <b>GetKey</b></div></td></tr></table><p>get the current key name<br />@return ${type}<br /><br /></p><p>Declaration :</p><ul><li>Uml : + GetKey() : string</li><li>Php : public function GetKey() </li></ul><a name="refoperation243458"></a>
+<table><tr><td><div class="element">Operation <b>GetValue</b></div></td></tr></table><p>get the value for a given key or get<br />@param string $key<br />@param int $mode<br />&lt;ul&gt;<br />&lt;li&gt;0=IBC1_VALUEMODE_VALUEONLY&lt;/li&gt;<br />&lt;li&gt;1=IBC1_VALUEMODE_TYPEONLY&lt;/li&gt;<br />&lt;li&gt;2=IBC1_VALUEMODE_ALL&lt;/li&gt;<br />&lt;/ul&gt;<br />@return ${type}<br /><br /></p><p>Declaration :</p><ul><li>Uml : + GetValue(inout key : string = NULL, inout mode : int = IBC1_VALUEMODE_VALUEONLY) : mixed</li><li>Php : public function GetValue($key = NULL, $mode = IBC1_VALUEMODE_VALUEONLY) </li></ul><a name="refoperation243586"></a>
+<table><tr><td><div class="element">Operation <b>GetEach</b></div></td></tr></table><p>return the current item and move to the next<br />@return ${type}<br /><br /></p><p>Declaration :</p><ul><li>Uml : + GetEach() : mixed</li><li>Php : public function GetEach() </li></ul><a name="refoperation243714"></a>
+<table><tr><td><div class="element">Operation <b>MoveFirst</b></div></td></tr></table><p>set index 0<br /><br />strongly recommend you involk this method before using GetEach() in a WHILE loop<br /><br /></p><p>Declaration :</p><ul><li>Uml : + MoveFirst() : </li><li>Php : public function MoveFirst() </li></ul><a name="refoperation243842"></a>
+<table><tr><td><div class="element">Operation <b>MoveNext</b></div></td></tr></table><p>add 1 to current index so as to get the next via GetValue() or GetKey()<br /><br /></p><p>Declaration :</p><ul><li>Uml : + MoveNext() : </li><li>Php : public function MoveNext() </li></ul><a name="refoperation243970"></a>
+<table><tr><td><div class="element">Operation <b>KeyExists</b></div></td></tr></table><p>check if the given key exists<br />@return ${type}<br /><br /></p><p>Declaration :</p><ul><li>Uml : + KeyExists(inout key : ) : bool</li><li>Php : public function KeyExists($key) </li></ul><a name="refoperation244098"></a>
+<table><tr><td><div class="element">Operation <b>ValueExists</b></div></td></tr></table><p>check if the given value exists<br />@return ${type}<br /><br /></p><p>Declaration :</p><ul><li>Uml : + ValueExists(inout value : ) : bool</li><li>Php : public function ValueExists($value) </li></ul><a name="refoperation244226"></a>
+<table><tr><td><div class="element">Operation <b>Remove</b></div></td></tr></table><p>remove an item from the list<br /><br /></p><p>Declaration :</p><ul><li>Uml : + Remove(inout key : ) : </li><li>Php : public function Remove($key) </li></ul><a name="refoperation244354"></a>
+<table><tr><td><div class="element">Operation <b>Clear</b></div></td></tr></table><p>remove all items from the list<br /><br /></p><p>Declaration :</p><ul><li>Uml : + Clear() : </li><li>Php : public function Clear() </li></ul><a name="refoperation244482"></a>
+<table><tr><td><div class="element">Operation <b>Count</b></div></td></tr></table><p>return the number of items in the list<br />@return ${type}<br /><br /></p><p>Declaration :</p><ul><li>Uml : + Count() : int</li><li>Php : public function Count() </li></ul></div>
+<p>All public operations : <a href="class148354.html#refoperation243202"><b>AppendValue</b></a> , <a href="class148354.html#refoperation244354"><b>Clear</b></a> , <a href="class148354.html#refoperation244482"><b>Count</b></a> , <a href="class148354.html#refoperation243586"><b>GetEach</b></a> , <a href="class148354.html#refoperation243330"><b>GetKey</b></a> , <a href="class148354.html#refoperation243458"><b>GetValue</b></a> , <a href="class148354.html#refoperation243970"><b>KeyExists</b></a> , <a href="class148354.html#refoperation243714"><b>MoveFirst</b></a> , <a href="class148354.html#refoperation243842"><b>MoveNext</b></a> , <a href="class148354.html#refoperation244226"><b>Remove</b></a> , <a href="class148354.html#refoperation243074"><b>SetValue</b></a> , <a href="class148354.html#refoperation244098"><b>ValueExists</b></a> </p>
+</body>
+</html>

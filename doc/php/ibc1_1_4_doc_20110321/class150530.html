@@ -1,0 +1,42 @@
+<!-- Documentation produced by the Html generator of Bouml (http://bouml.free.fr) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class SQLTable</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class SQLTable</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="refclass150530"></a>
+<p>@version 0.7.20110316<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.common.database<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>Php :  class SQLTable implements <a href="class149250.html#refclass149250"><b>FieldDefListInterface</b></a> </li></ul><p>Artifact : <a href="index.html#refartifact150018"><b>SQLTable.class</b></a></p>
+<div class="sub">
+<a name="refattribute166018"></a>
+<table><tr><td><div class="element">Attribute <b>table</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + table : </li><li>Php : public $table</li></ul><a name="refattribute166146"></a>
+<table><tr><td><div class="element">Attribute <b>mode</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + mode : </li><li>Php : public $mode</li></ul><a name="refattribute166274"></a>
+<table><tr><td><div class="element">Attribute <b>charset</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + charset : </li><li>Php : public $charset</li></ul><a name="refattribute166402"></a>
+<table><tr><td><div class="element">Attribute <b>fieldlist</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # fieldlist : </li><li>Php : protected $fieldlist</li></ul><a name="refoperation256130"></a>
+<table><tr><td><div class="element">Operation <b>__construct</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : ~ __construct(inout m : , inout t :  = "") : </li><li>Php :  function __construct($m, $t = "") </li></ul><a name="refoperation256258"></a>
+<table><tr><td><div class="element">Operation <b>SetCharset</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetCharset(inout charset : , inout collate : ) : </li><li>Php : public function SetCharset($charset, $collate) </li></ul><a name="refoperation256386"></a>
+<table><tr><td><div class="element">Operation <b>SetMode</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetMode(inout m : ) : </li><li>Php : public function SetMode($m) </li></ul><a name="refoperation256514"></a>
+<table><tr><td><div class="element">Operation <b>SetTable</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetTable(inout t : ) : </li><li>Php : public function SetTable($t) </li></ul><a name="refoperation256642"></a>
+<table><tr><td><div class="element">Operation <b>AddField</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + AddField(inout fieldname : , inout fieldtype :  = IBC1_DATATYPE_INTEGER, inout length :  = 1, inout isnull :  = TRUE, inout default :  = NULL, inout ispkey :  = FALSE, inout keyname :  = "", inout autoincrement :  = FALSE) : </li><li>Php : public function AddField($fieldname, $fieldtype = IBC1_DATATYPE_INTEGER, $length = 1, $isnull = TRUE, $default = NULL, $ispkey = FALSE, $keyname = "", $autoincrement = FALSE) </li></ul><a name="refoperation256770"></a>
+<table><tr><td><div class="element">Operation <b>ClearFields</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ClearFields() : </li><li>Php : public function ClearFields() </li></ul><a name="refoperation256898"></a>
+<table><tr><td><div class="element">Operation <b>FieldCount</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + FieldCount() : </li><li>Php : public function FieldCount() </li></ul><a name="refoperation257026"></a>
+<table><tr><td><div class="element">Operation <b>GetSQL</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + GetSQL() : </li><li>Php : public function GetSQL() </li></ul></div>
+<p>All public operations : <a href="class149250.html#refoperation250498"><b>AddField</b></a> , <a href="class150530.html#refoperation256642"><b>AddField</b></a> , <a href="class149250.html#refoperation250626"><b>ClearFields</b></a> , <a href="class150530.html#refoperation256770"><b>ClearFields</b></a> , <a href="class149250.html#refoperation250754"><b>FieldCount</b></a> , <a href="class150530.html#refoperation256898"><b>FieldCount</b></a> , <a href="class150530.html#refoperation257026"><b>GetSQL</b></a> , <a href="class150530.html#refoperation256258"><b>SetCharset</b></a> , <a href="class150530.html#refoperation256386"><b>SetMode</b></a> , <a href="class150530.html#refoperation256514"><b>SetTable</b></a> </p>
+</body>
+</html>

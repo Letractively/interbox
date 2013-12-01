@@ -1,0 +1,63 @@
+<!-- Documentation produced by the Html generator of Bouml (http://bouml.free.fr) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>F</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">F</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<table>
+<tr bgcolor=#f0f0f0><td align=center><b>Name</b></td><td align=center><b>Kind</b></td><td align=center><b>Description</b></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refoperation250242" target = "projectFrame"><b>Fetch</b></a></td><td>operation</td><td><br />fetch a row from the result<br />@param ${t0} ${p0}<br />&lt;table&gt;<br />&lt;tr&gt;&lt;th&gt;0&lt;/th&gt;&lt;td&gt;(default)return an array with field names as keys&lt;/td&gt;&lt;/tr&gt;<br />&lt;tr&gt;&lt;th&gt;1&lt;/th&gt;&lt;td&gt;return an object with field names as attributes&lt;/td&gt;&lt;/tr&gt;<br />&lt;tr&gt;&lt;th&gt;2&lt;/th&gt;&lt;td&gt;return an array with numbers as keys&lt;/td&gt;&lt;/tr&gt;<br />&lt;tr&gt;&lt;th&gt;3&lt;/th&gt;&lt;td&gt;return an array with both field names and numbers as keys&lt;/td&gt;&lt;/tr&gt;<br />&lt;/table&gt;<br />@return ${type}<br />if nothing is fetched then return FALSE;&lt;br /&gt;<br />if result is manually bound, return TRUE when succeeding;&lt;br /&gt;<br />if it is automatically bound to a buit-in attribute, &lt;br /&gt;<br />return an object when the parameter $t is 1 or an array when it is not 1.<br /></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refoperation250754" target = "projectFrame"><b>FieldCount</b></a></td><td>operation</td><td><br />get the number of field definitions in the list<br />@return ${type}<br /></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refoperation251138" target = "projectFrame"><b>FieldCount</b></a></td><td>operation</td><td><br />get the number of fields in the list<br /></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refoperation262658" target = "projectFrame"><b>FieldCount</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refoperation265346" target = "projectFrame"><b>FieldCount</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refoperation254978" target = "projectFrame"><b>FieldCount</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refoperation256898" target = "projectFrame"><b>FieldCount</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="class149250.html#refclass149250" target = "projectFrame"><b>FieldDefListInterface</b></a></td><td>class</td><td><br />interface for a field list with greater details for field definition<br />(a CREATE TABLE generator has to realize this interface)<br />@version 0.1.20110314<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.common.database<br /></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refartifact148738" target = "projectFrame"><b>FieldDefListInterface.class</b></a></td><td>artifact</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refoperation246914" target = "projectFrame"><b>FieldExists</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refoperation259714" target = "projectFrame"><b>FieldExists</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refoperation265986" target = "projectFrame"><b>FieldExists</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="class149378.html#refclass149378" target = "projectFrame"><b>FieldExpListInterface</b></a></td><td>class</td><td><br />interface for a simple field list with support of expressions and alias in a SQL statement<br />(a SELECT generator has to realize this interface)<br />@version 0.1.20110314<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.common.database<br /></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refartifact148866" target = "projectFrame"><b>FieldExpListInterface.class</b></a></td><td>artifact</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refattribute165378" target = "projectFrame"><b>fieldlist</b></a></td><td>attribute</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refattribute166402" target = "projectFrame"><b>fieldlist</b></a></td><td>attribute</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refattribute172162" target = "projectFrame"><b>FieldList</b></a></td><td>attribute</td><td>private $FieldList=array();</td></tr>
+<tr bgcolor=#f0f0f0><td><a href="class149506.html#refclass149506" target = "projectFrame"><b>FieldValListInterface</b></a></td><td>class</td><td><br />interface for a field list with values and their types<br />(an UPDATE or an INSERT generator has to realize this interface)<br />@version 0.1.20110314<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.common.database<br /></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refartifact148994" target = "projectFrame"><b>FieldValListInterface.class</b></a></td><td>artifact</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refoperation290690" target = "projectFrame"><b>FileExt</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refoperation296194" target = "projectFrame"><b>FileExt</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="class153218.html#refclass153218" target = "projectFrame"><b>FileItemEditor</b></a></td><td>class</td><td><br /><br />@version 0.1<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.resource.database<br /></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="class153858.html#refclass153858" target = "projectFrame"><b>FileItemEditor</b></a></td><td>class</td><td><br /><br />@version 0.1<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.resource.filesystem<br /></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refartifact153090" target = "projectFrame"><b>FileItemEditor.class</b></a></td><td>artifact</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refartifact153730" target = "projectFrame"><b>FileItemEditor.class</b></a></td><td>artifact</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="class153346.html#refclass153346" target = "projectFrame"><b>FileItemReader</b></a></td><td>class</td><td><br /><br />@version 0.1<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.resource.database<br /></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="class153986.html#refclass153986" target = "projectFrame"><b>FileItemReader</b></a></td><td>class</td><td><br /><br />@version 0.1<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.resource.filesystem<br /></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refartifact153218" target = "projectFrame"><b>FileItemReader.class</b></a></td><td>artifact</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refartifact153858" target = "projectFrame"><b>FileItemReader.class</b></a></td><td>artifact</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="class153474.html#refclass153474" target = "projectFrame"><b>FileListReader</b></a></td><td>class</td><td><br /><br />@version 0.1<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.resource.database<br /></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="class154114.html#refclass154114" target = "projectFrame"><b>FileListReader</b></a></td><td>class</td><td><br /><br />@version 0.1<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.resource.filesystem<br /></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refartifact153346" target = "projectFrame"><b>FileListReader.class</b></a></td><td>artifact</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refartifact153986" target = "projectFrame"><b>FileListReader.class</b></a></td><td>artifact</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refdeployment view137218" target = "projectFrame"><b>filesystem</b></a></td><td>deployment view</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refclass view137090" target = "projectFrame"><b>filesystem</b></a></td><td>class view</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refpackage137730" target = "projectFrame"><b>filesystem</b></a></td><td>package</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="class153602.html#refclass153602" target = "projectFrame"><b>FileUploader</b></a></td><td>class</td><td><br /><br />@version 0.1<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.resource.database<br /></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="class154242.html#refclass154242" target = "projectFrame"><b>FileUploader</b></a></td><td>class</td><td><br /><br />@version 0.1<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.resource.filesystem<br /></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refartifact153474" target = "projectFrame"><b>FileUploader.class</b></a></td><td>artifact</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refartifact154114" target = "projectFrame"><b>FileUploader.class</b></a></td><td>artifact</td><td></td></tr>
+<tr bgcolor=#f0f0f0><td><a href="index.html#refattribute171138" target = "projectFrame"><b>footer</b></a></td><td>attribute</td><td></td></tr>
+</table>
+</body>
+</html>

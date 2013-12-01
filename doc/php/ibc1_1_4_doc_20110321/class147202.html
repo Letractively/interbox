@@ -1,0 +1,41 @@
+<!-- Documentation produced by the Html generator of Bouml (http://bouml.free.fr) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CatalogListReader</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CatalogListReader</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="refclass147202"></a>
+<p>@version 0.6<br />@author Zhiji Gu &lt;gu_zhiji@163.com&gt;<br />@copyright &amp;copy; 2010-2011 InterBox Core 1.1.4, GuZhiji Studio<br />@package interbox.core.catalog<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>Php :  class CatalogListReader extends <a href="class147330.html#refclass147330"><b>DataList</b></a> </li></ul><p>Artifact : <a href="index.html#refartifact146690"><b>CatalogListReader.class</b></a></p>
+<div class="sub">
+<a name="refattribute160002"></a>
+<table><tr><td><div class="element">Attribute <b>list_sql</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # list_sql :  =  NULL</li><li>Php : protected $list_sql</li></ul><a name="refoperation228866"></a>
+<table><tr><td><div class="element">Operation <b>__construct</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : ~ __construct(inout Conns : <a href="class146946.html#refclass146946"><b>DBConnProvider</b></a>, inout ServiceName : , inout EL : <a href="class147074.html#refclass147074"><b>ErrorList</b></a> = NULL) : </li><li>Php :  function __construct(<a href="class146946.html#refclass146946"><b>DBConnProvider</b></a> $Conns, $ServiceName, <a href="class147074.html#refclass147074"><b>ErrorList</b></a> $EL = NULL) </li></ul><a name="refoperation228994"></a>
+<table><tr><td><div class="element">Operation <b>OpenService</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + OpenService(inout Conns : <a href="class146946.html#refclass146946"><b>DBConnProvider</b></a>, inout ServiceName : ) : </li><li>Php : public function OpenService(<a href="class146946.html#refclass146946"><b>DBConnProvider</b></a> $Conns, $ServiceName) </li></ul><a name="refoperation229122"></a>
+<table><tr><td><div class="element">Operation <b>LoadCatalog</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + LoadCatalog(inout ID : ) : </li><li>Php : public function LoadCatalog($ID) </li></ul><a name="refoperation229250"></a>
+<table><tr><td><div class="element">Operation <b>AddFields</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - AddFields(inout sql : ) : </li><li>Php : private function AddFields(&amp; $sql) </li></ul><a name="refoperation229378"></a>
+<table><tr><td><div class="element">Operation <b>LoadIDPath</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + LoadIDPath(inout ID : ) : </li><li>Php : public function LoadIDPath($ID) </li></ul><a name="refoperation229506"></a>
+<table><tr><td><div class="element">Operation <b>SetName</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetName(inout name : , inout exact :  = FALSE) : </li><li>Php : public function SetName($name, $exact = FALSE) </li></ul><a name="refoperation229634"></a>
+<table><tr><td><div class="element">Operation <b>SetParentCatalog</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetParentCatalog(inout ID : ) : </li><li>Php : public function SetParentCatalog($ID) </li></ul><a name="refoperation229762"></a>
+<table><tr><td><div class="element">Operation <b>SetAdminGroup</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetAdminGroup(inout gid : ) : </li><li>Php : public function SetAdminGroup($gid) </li></ul><a name="refoperation229890"></a>
+<table><tr><td><div class="element">Operation <b>SetVisitGroup</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetVisitGroup(inout gid : ) : </li><li>Php : public function SetVisitGroup($gid) </li></ul><a name="refoperation230018"></a>
+<table><tr><td><div class="element">Operation <b>OrderBy</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + OrderBy(inout fieldname : ) : </li><li>Php : public function OrderBy($fieldname) </li></ul><a name="refoperation230146"></a>
+<table><tr><td><div class="element">Operation <b>LoadList</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + LoadList() : </li><li>Php : public function LoadList() </li></ul><a name="refoperation230274"></a>
+<table><tr><td><div class="element">Operation <b>OpenSubCatalog</b></div></td></tr></table><p>the following is for convenience<br /></p><p>Declaration :</p><ul><li>Uml : + OpenSubCatalog(inout ID : ) : </li><li>Php : public function OpenSubCatalog($ID) </li></ul><a name="refoperation230402"></a>
+<table><tr><td><div class="element">Operation <b>GetAdminList</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + GetAdminList(inout CatalogID : ) : </li><li>Php : public function GetAdminList($CatalogID) </li></ul></div>
+<p>All public operations : <a href="class147330.html#refoperation272514"><b>AddItem</b></a> , <a href="class147330.html#refoperation272898"><b>Clear</b></a> , <a href="class147330.html#refoperation270338"><b>CloseService</b></a> , <a href="class151938.html#refoperation273282"><b>CloseService</b></a> , <a href="class147330.html#refoperation272770"><b>Count</b></a> , <a href="class147202.html#refoperation230402"><b>GetAdminList</b></a> , <a href="class151938.html#refoperation273794"><b>GetDBConn</b></a> , <a href="class151938.html#refoperation273666"><b>GetDBConns</b></a> , <a href="class147330.html#refoperation271874"><b>GetEach</b></a> , <a href="class151938.html#refoperation273922"><b>GetError</b></a> , <a href="class147330.html#refoperation271746"><b>GetIndex</b></a> , <a href="class147330.html#refoperation271618"><b>GetItem</b></a> , <a href="class147330.html#refoperation270978"><b>GetPageCount</b></a> , <a href="class147330.html#refoperation270722"><b>GetPageNumber</b></a> , <a href="class147330.html#refoperation270466"><b>GetPageSize</b></a> , <a href="class151938.html#refoperation273538"><b>GetServiceName</b></a> , <a href="class147330.html#refoperation271106"><b>GetTotalCount</b></a> , <a href="class151938.html#refoperation273410"><b>IsServiceOpen</b></a> , <a href="class147330.html#refoperation272258"><b>ItemExists</b></a> , <a href="class147202.html#refoperation229122"><b>LoadCatalog</b></a> , <a href="class147202.html#refoperation229378"><b>LoadIDPath</b></a> , <a href="class147202.html#refoperation230146"><b>LoadList</b></a> , <a href="class147330.html#refoperation272002"><b>MoveFirst</b></a> , <a href="class147330.html#refoperation272130"><b>MoveNext</b></a> , <a href="class147202.html#refoperation228994"><b>OpenService</b></a> , <a href="class147330.html#refoperation270210"><b>OpenService</b></a> , <a href="class151938.html#refoperation273154"><b>OpenService</b></a> , <a href="class147202.html#refoperation230274"><b>OpenSubCatalog</b></a> , <a href="class147202.html#refoperation230018"><b>OrderBy</b></a> , <a href="class147330.html#refoperation272642"><b>Remove</b></a> , <a href="class147202.html#refoperation229762"><b>SetAdminGroup</b></a> , <a href="class147202.html#refoperation229506"><b>SetName</b></a> , <a href="class147330.html#refoperation270850"><b>SetPageNumber</b></a> , <a href="class147330.html#refoperation270594"><b>SetPageSize</b></a> , <a href="class147202.html#refoperation229634"><b>SetParentCatalog</b></a> , <a href="class147202.html#refoperation229890"><b>SetVisitGroup</b></a> , <a href="class147330.html#refoperation272386"><b>ValueExists</b></a> </p>
+</body>
+</html>

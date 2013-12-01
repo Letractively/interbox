@@ -1,0 +1,1 @@
+<option value="{$id}"{$selected}>{$text_name}</option>

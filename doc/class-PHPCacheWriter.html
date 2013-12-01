@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class PHPCacheWriter | IBC1_PHP_Framework</title>
+
+	<script type="text/javascript" src="resources/combined.js?2138356901"></script>
+	<script type="text/javascript" src="elementlist.js?204602175"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-interbox.html">interbox<span></span></a>
+						<ul>
+				<li class="active"><a href="package-interbox.core.html">core<span></span></a>
+						<ul>
+				<li class="active"><a href="package-interbox.core.cache.html">cache<span></span></a>
+						<ul>
+				<li class="active"><a href="package-interbox.core.cache.phpcache.html">phpcache</a>
+						</li>
+							</ul></li>
+				<li><a href="package-interbox.core.framework.html">framework</a>
+						</li>
+				<li><a href="package-interbox.core.util.html">util</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="package-None.html">None</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-PHPCacheReader.html">PHPCacheReader</a></li>
+				<li class="active"><a href="class-PHPCacheWriter.html">PHPCacheWriter</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-interbox.core.cache.phpcache.html" title="Summary of interbox\core\cache\phpcache"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class PHPCacheWriter</h1>
+
+
+	<div class="description">
+	
+<p>a cache file writer implemented with php array and serialization features</p>
+
+<p>The editor supports saving basic data types and arrays into a php cache file.
+And it is also possible to set an expiry time for each value or even a whole
+group.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>PHPCacheWriter</span></b>			
+			 implements 
+				<a href="class-ICacheWriter.html"><span>ICacheWriter</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-interbox.html">interbox</a>\<a href="package-interbox.core.html">core</a>\<a href="package-interbox.core.cache.html">cache</a>\<a href="package-interbox.core.cache.phpcache.html">phpcache</a><br />
+
+				<b>Copyright:</b>
+				© 2010-2013 InterBox Core 1.2 for PHP, GuZhiji Studio<br />
+				<b>License:</b>
+				<a href="MIT">License</a><br />
+				<b>Author:</b>
+				Zhiji Gu &lt;<a
+href="mailto:gu_zhiji&#64;163.com">gu_zhiji&#64;<!---->163.com</a>&gt;<br />
+				<b>Version:</b>
+				0.7.20130116<br />
+		<b>Located at</b> <a href="source-class-PHPCacheWriter.html#3-171" title="Go to source code">src/modules/core/cache/phpcache/PHPCacheWriter.class.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-PHPCacheWriter.html#37-52" title="Go to source code">__construct</a>( <span>string <var>$cachefile</var></span>, <span>string <var>$groupname</var></span> )</code>
+
+		<div class="description short">
+			
+<p>group name should be the name of the cachefile TODO further explanations</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>group name should be the name of the cachefile TODO further explanations</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cachefile</var></dt>
+					<dd><code>string</code><br>$cachefile</dd>
+					<dt><var>$groupname</var></dt>
+					<dd><code>string</code><br>$groupname</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetValue" id="_SetValue">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetValue">#</a>
+		<code><a href="source-class-PHPCacheWriter.html#54-79" title="Go to source code">SetValue</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>, <span>integer <var>$seconds</var> = <span class="php-num">0</span></span>, <span>boolean <var>$withversion</var> = <span class="php-keyword1">FALSE</span></span> )</code>
+
+		<div class="description short">
+			
+<p>set a value to a key with an optional length of its lifetime</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>set a value to a key with an optional length of its lifetime</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code><br>$value</dd>
+					<dt><var>$seconds</var></dt>
+					<dd><code>integer</code><br>$seconds optional, length of lifetime, in seconds
+<ul>
+	<li>&gt;0 - update the expiry time</li>
+
+	<li>=0 - remain the expiry time while changing the value</li>
+
+	<li>&lt;0 - remove the expiry time</li>
+</ul>
+</dd>
+					<dt><var>$withversion</var></dt>
+					<dd><code>boolean</code><br>$withversion optional, true means saving with a timestamp as a version number</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ICacheWriter.html#_SetValue">ICacheWriter::SetValue()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Remove" id="_Remove">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Remove">#</a>
+		<code><a href="source-class-PHPCacheWriter.html#81-88" title="Go to source code">Remove</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>remove a key and its value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>remove a key and its value</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ICacheWriter.html#_Remove">ICacheWriter::Remove()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="RemoveAll" id="_RemoveAll">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_RemoveAll">#</a>
+		<code><a href="source-class-PHPCacheWriter.html#90-93" title="Go to source code">RemoveAll</a>( )</code>
+
+		<div class="description short">
+			
+<p>remove all keys and values</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>remove all keys and values</p>
+
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ICacheWriter.html#_RemoveAll">ICacheWriter::RemoveAll()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Save" id="_Save">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Save">#</a>
+		<code><a href="source-class-PHPCacheWriter.html#95-169" title="Go to source code">Save</a>( )</code>
+
+		<div class="description short">
+			
+<p>save all changes or remove the cache file if all are removed</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>save all changes or remove the cache file if all are removed</p>
+
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ICacheWriter.html#_Save">ICacheWriter::Save()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		IBC1_PHP_Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

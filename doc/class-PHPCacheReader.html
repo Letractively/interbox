@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class PHPCacheReader | IBC1_PHP_Framework</title>
+
+	<script type="text/javascript" src="resources/combined.js?2138356901"></script>
+	<script type="text/javascript" src="elementlist.js?204602175"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-interbox.html">interbox<span></span></a>
+						<ul>
+				<li class="active"><a href="package-interbox.core.html">core<span></span></a>
+						<ul>
+				<li class="active"><a href="package-interbox.core.cache.html">cache<span></span></a>
+						<ul>
+				<li class="active"><a href="package-interbox.core.cache.phpcache.html">phpcache</a>
+						</li>
+							</ul></li>
+				<li><a href="package-interbox.core.framework.html">framework</a>
+						</li>
+				<li><a href="package-interbox.core.util.html">util</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="package-None.html">None</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-PHPCacheReader.html">PHPCacheReader</a></li>
+				<li><a href="class-PHPCacheWriter.html">PHPCacheWriter</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-interbox.core.cache.phpcache.html" title="Summary of interbox\core\cache\phpcache"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class PHPCacheReader</h1>
+
+
+	<div class="description">
+	
+<p>a cache file reader implemented with php array and serialization features</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>PHPCacheReader</span></b>			
+			 implements 
+				<a href="class-ICacheReader.html"><span>ICacheReader</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-interbox.html">interbox</a>\<a href="package-interbox.core.html">core</a>\<a href="package-interbox.core.cache.html">cache</a>\<a href="package-interbox.core.cache.phpcache.html">phpcache</a><br />
+
+				<b>Copyright:</b>
+				© 2010-2013 InterBox Core 1.2 for PHP, GuZhiji Studio<br />
+				<b>License:</b>
+				<a href="MIT">License</a><br />
+				<b>Author:</b>
+				Zhiji Gu &lt;<a
+href="mailto:gu_zhiji&#64;163.com">gu_zhiji&#64;<!---->163.com</a>&gt;<br />
+				<b>Version:</b>
+				0.8.20120220<br />
+		<b>Located at</b> <a href="source-class-PHPCacheReader.html#3-144" title="Go to source code">src/modules/core/cache/phpcache/PHPCacheReader.class.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-PHPCacheReader.html#36-51" title="Go to source code">__construct</a>( <span>type <var>$cachefile</var></span>, <span>type <var>$groupname</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cachefile</var></dt>
+					<dd><code>type</code><br>$cachefile</dd>
+					<dt><var>$groupname</var></dt>
+					<dd><code>type</code><br>$groupname</dd>
+				</dl></div>
+
+
+
+				<h4>See</h4>
+				<div class="list">
+						PHPCacheEditor::__construct()<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetRefreshFunction" id="_SetRefreshFunction">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetRefreshFunction">#</a>
+		<code><a href="source-class-PHPCacheReader.html#53-55" title="Go to source code">SetRefreshFunction</a>( <span>callable <var>$function</var></span> )</code>
+
+		<div class="description short">
+			
+<p>set a function for refreshing cache</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>set a function for refreshing cache</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$function</var></dt>
+					<dd><code>callable</code><br>$function function name, without parameters</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ICacheReader.html#_SetRefreshFunction">ICacheReader::SetRefreshFunction()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetValue" id="_GetValue">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetValue">#</a>
+		<code><a href="source-class-PHPCacheReader.html#71-113" title="Go to source code">GetValue</a>( <span>string <var>$key</var></span>, <span>integer <var>$version</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			
+<p>fetch a value with a key and may refresh the cache if it has expired</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>fetch a value with a key and may refresh the cache if it has expired</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key</dd>
+					<dt><var>$version</var></dt>
+					<dd><code>integer</code><br>$version the known latest version number to be compared with the version number
+stored with data, typically using values returned by the php function time()</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ICacheReader.html#_GetValue">ICacheReader::GetValue()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetKeys" id="_GetKeys">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetKeys">#</a>
+		<code><a href="source-class-PHPCacheReader.html#115-142" title="Go to source code">GetKeys</a>( )</code>
+
+		<div class="description short">
+			
+<p>get an array of all available keys</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>get an array of all available keys</p>
+
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ICacheReader.html#_GetKeys">ICacheReader::GetKeys()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		IBC1_PHP_Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

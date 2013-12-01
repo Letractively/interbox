@@ -1,0 +1,1 @@
+<a href="{$URL}" data-icon="{$Icon}" data-iconpos="right" data-rel="dialog" data-transition="pop">{$Content}</a>
